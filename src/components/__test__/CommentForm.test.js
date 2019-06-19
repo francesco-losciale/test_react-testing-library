@@ -24,5 +24,6 @@ describe('Comment Form', () => {
     const nameFieldNode = getByLabelText('Your Name')
     fireEvent.change(nameFieldNode, { target: { value: author } })
     expect(submitButton.disabled).toEqual(false)
-  })
+  });
+
 })

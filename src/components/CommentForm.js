@@ -31,10 +31,12 @@ class CommentForm extends React.Component {
     
     handleOnSubmit(event) { 
         event.preventDefault();
-        this.props.addComment({
-            commentAuthor: this.state.commentAuthor, 
-            commentText: this.state.commentText,
-        });
+        console.log('addComment being called')
+        console.log(this.props)
+        this.props.addComment(
+            this.state.commentAuthor, 
+            this.state.commentText
+        );
         this.setState(initialState);
     }
 

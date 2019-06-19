@@ -24,7 +24,7 @@ class Comments extends React.Component {
             .catch(console.error);
     }
 
-    addComment({commentAuthor, commentText}) {
+    addComment(commentAuthor, commentText) {
         this.setState(prevState => ({
             comments: prevState.comments.concat({
                 id: prevState.comments.length+1,

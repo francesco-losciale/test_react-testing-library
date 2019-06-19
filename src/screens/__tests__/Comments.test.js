@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, fireEvent, wait, cleanup } from '@testing-library/react'
+import { render, fireEvent, wait, cleanup, getByPlaceholderText } from '@testing-library/react'
 import axios from 'axios'
 import Comments from '../Comments'
 const comment1 = {
@@ -58,4 +58,5 @@ describe('Comments Screen', () => {
     expect(commentTextfieldNode.value).toEqual('')
     expect(nameFieldNode.value).toEqual('')
   })
+
 })
