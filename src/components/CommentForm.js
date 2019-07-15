@@ -31,8 +31,6 @@ class CommentForm extends React.Component {
     
     handleOnSubmit(event) { 
         event.preventDefault();
-        console.log('addComment being called')
-        console.log(this.props)
         this.props.addComment(
             this.state.commentAuthor, 
             this.state.commentText

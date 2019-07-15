@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Used for practicing TDD on React app.
+As second step the application state has been moved to Redux.
+
 ## Available Scripts
 
 In the project directory, you can run:
